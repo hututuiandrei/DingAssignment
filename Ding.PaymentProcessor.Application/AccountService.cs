@@ -22,8 +22,6 @@ public class AccountService : IAccountService
 
     public void Withdraw(Amount amount)
     {
-        _context.Accounts.Attach(_account);
-
         _account.Withdraw(amount);
         _context.SaveChangesAsync(CancellationToken.None).Wait();
     }
