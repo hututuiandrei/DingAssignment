@@ -1,2 +1,8 @@
 <Solution>
+  <Project Path="Ding.PaymentProcessor.Api/Ding.PaymentProcessor.Api.csproj" />
+  <Project Path="Ding.PaymentProcessor.Application.UnitTests/Ding.PaymentProcessor.Application.UnitTests.csproj" />
+  <Project Path="Ding.PaymentProcessor.Application/Ding.PaymentProcessor.Application.csproj" />
+  <Project Path="Ding.PaymentProcessor.Domain.UnitTests/Ding.PaymentProcessor.Domain.UnitTests.csproj" />
+  <Project Path="Ding.PaymentProcessor.Domain/Ding.PaymentProcessor.Domain.csproj" />
+  <Project Path="Ding.PaymentProcessor.Infrastructure/Ding.PaymentProcessor.Infrastructure.csproj" />
 </Solution>

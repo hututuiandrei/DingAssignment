@@ -1,0 +1,28 @@
+@Ding.PaymentProcessor.Api_HostAddress = http://localhost:5274
+@accountId = REPLACE_WITH_ACCOUNT_ID
+
+### Get all accounts
+GET {{Ding.PaymentProcessor.Api_HostAddress}}/accounts
+Accept: application/json
+
+### Get account statement
+GET {{Ding.PaymentProcessor.Api_HostAddress}}/accounts/{{accountId}}/statement
+Accept: text/plain
+
+### Deposit into account
+POST {{Ding.PaymentProcessor.Api_HostAddress}}/accounts/{{accountId}}/deposit
+Content-Type: application/json
+
+{
+  "amount": 100,
+  "currency": "USD"
+}
+
+### Withdraw from account
+POST {{Ding.PaymentProcessor.Api_HostAddress}}/accounts/{{accountId}}/withdraw
+Content-Type: application/json
+
+{
+  "amount": 50,
+  "currency": "USD"
+}
